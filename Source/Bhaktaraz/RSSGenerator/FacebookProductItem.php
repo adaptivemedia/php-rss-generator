@@ -476,74 +476,74 @@ class FacebookProductItem implements ItemInterface
     {
         $xml = new SimpleXMLElement('<?xml version="1.0" encoding="UTF-8" ?><item></item>', LIBXML_NOERROR | LIBXML_ERR_NONE | LIBXML_ERR_FATAL);
 
-        $xml->addChild('g:id', $this->id, 'http://base.google.com/ns/1.0');
-        $xml->addChild('g:title', $this->title, 'http://base.google.com/ns/1.0');
-        $xml->addChild('g:link', $this->url, 'http://base.google.com/ns/1.0');
-        $xml->addChild('g:description', $this->description, 'http://base.google.com/ns/1.0');
-        $xml->addChild('g:availability', $this->availability, 'http://base.google.com/ns/1.0');
-        $xml->addChild('g:price', $this->price, 'http://base.google.com/ns/1.0');
-        $xml->addChild('g:condition', $this->condition, 'http://base.google.com/ns/1.0');
-        $xml->addChild('g:google_product_category', $this->googleProductCategory, 'http://base.google.com/ns/1.0');
-        $xml->addChild('g:image_link', $this->imageLink, 'http://base.google.com/ns/1.0');
+        $xml->addChild('g:id', $this->id);
+        $xml->addChild('g:title', $this->title);
+        $xml->addChild('g:link', $this->url);
+        $xml->addChild('g:description', $this->description);
+        $xml->addChild('g:availability', $this->availability);
+        $xml->addChild('g:price', $this->price);
+        $xml->addChild('g:condition', $this->condition);
+        $xml->addChild('g:google_product_category', $this->googleProductCategory);
+        $xml->addChild('g:image_link', $this->imageLink);
 
         if(!empty($this->brand)) {
-            $xml->addChild('g:brand', $this->brand, 'http://base.google.com/ns/1.0');
+            $xml->addChild('g:brand', $this->brand);
         }
 
         if(!empty($this->gtin)) {
-            $xml->addChild('g:gtin', $this->gtin, 'http://base.google.com/ns/1.0');
+            $xml->addChild('g:gtin', $this->gtin);
         }
 
         if(!empty($this->mpn)) {
-            $xml->addChild('g:mpn', $this->mpn, 'http://base.google.com/ns/1.0');
+            $xml->addChild('g:mpn', $this->mpn);
         }
 
         if(!empty($this->size)) {
-            $xml->addChild('g:size', $this->size, 'http://base.google.com/ns/1.0');
+            $xml->addChild('g:size', $this->size);
         }
 
         if(!empty($this->material)) {
-            $xml->addChild('g:material', $this->material, 'http://base.google.com/ns/1.0');
+            $xml->addChild('g:material', $this->material);
         }
 
         if(!empty($this->additionalImageLink)) {
-            $xml->addChild('g:additional_image_link', $this->additionalImageLink, 'http://base.google.com/ns/1.0');
+            $xml->addChild('g:additional_image_link', $this->additionalImageLink);
         }
 
         if(!empty($this->color)) {
-            $xml->addChild('g:color', $this->color, 'http://base.google.com/ns/1.0');
+            $xml->addChild('g:color', $this->color);
         }
 
         if(!empty($this->gender)) {
-            $xml->addChild('g:gender', $this->gender, 'http://base.google.com/ns/1.0');
+            $xml->addChild('g:gender', $this->gender);
         }
 
         if(!empty($this->ageGroup)) {
-            $xml->addChild('g:age_group', $this->ageGroup, 'http://base.google.com/ns/1.0');
+            $xml->addChild('g:age_group', $this->ageGroup);
         }
 
         if(!empty($this->itemGroupId)) {
-            $xml->addChild('g:item_group_id', $this->itemGroupId, 'http://base.google.com/ns/1.0');
+            $xml->addChild('g:item_group_id', $this->itemGroupId);
         }
 
         if(!empty($this->customLabel0)) {
-            $xml->addChild('g:custom_label_0', $this->customLabel0, 'http://base.google.com/ns/1.0');
+            $xml->addChild('g:custom_label_0', $this->customLabel0);
         }
 
         if(!empty($this->customLabel1)) {
-            $xml->addChild('g:custom_label_1', $this->customLabel1, 'http://base.google.com/ns/1.0');
+            $xml->addChild('g:custom_label_1', $this->customLabel1);
         }
 
         if(!empty($this->customLabel2)) {
-            $xml->addChild('g:custom_label_2', $this->customLabel2, 'http://base.google.com/ns/1.0');
+            $xml->addChild('g:custom_label_2', $this->customLabel2);
         }
 
         if(!empty($this->customLabel3)) {
-            $xml->addChild('g:custom_label_3', $this->customLabel3, 'http://base.google.com/ns/1.0');
+            $xml->addChild('g:custom_label_3', $this->customLabel3);
         }
 
         if(!empty($this->customLabel4)) {
-            $xml->addChild('g:custom_label_4', $this->customLabel4, 'http://base.google.com/ns/1.0');
+            $xml->addChild('g:custom_label_4', $this->customLabel4);
         }
 
         return $xml;
