@@ -8,7 +8,7 @@ use Bhaktaraz\RSSGenerator\SimpleXMLElement;
 
 class FacebookProductItem implements ItemInterface
 {
-    /** @var integer */
+    /** @var integer|string */
     protected $id;
 
     /** @var string */
@@ -103,7 +103,7 @@ class FacebookProductItem implements ItemInterface
 
     /**
      * Set item id
-     * @param integer $id
+     * @param integer|string $id
      * @return $this
      */
     public function id($id)
